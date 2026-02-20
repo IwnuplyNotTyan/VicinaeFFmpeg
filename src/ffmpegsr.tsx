@@ -75,7 +75,7 @@ function startRecording(prefs: Preferences): void {
   const display = detectDisplay();
   const resolution = detectResolution(display);
   const audioDevice = prefs.audioDevice?.trim() || "default";
-  const fps = prefs.fps?.trim() || "30";
+  const fps = prefs.fps?.trim() || "60";
 
   const args = [
     "-y",
@@ -209,7 +209,7 @@ export default function FFmpegScreenRecorder() {
           </Detail.Metadata.TagList>
           <Detail.Metadata.Separator />
           <Detail.Metadata.Label title="Output" text={outputDir} />
-          <Detail.Metadata.Label title="FPS" text={prefs.fps || "30"} />
+          <Detail.Metadata.Label title="FPS" text={prefs.fps || "60"} />
           <Detail.Metadata.Label title="Display" text={display} />
           <Detail.Metadata.Label title="Audio" text={prefs.audioDevice || "default"} />
           <Detail.Metadata.Separator />
