@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
+  "name": "ffmpeg-recoreder",
+  "title": "FFmpeg Recoreder",
+  "description": "FFMpeg Wrapper For Screen Record, Built Withou t Sanity And Love",
+  "categories": [],
+  "license": "MIT",
+  "author": "iwnuplynottyan",
+  "contributors": [],
+  "pastContributors": [],
+  "icon": "extension_icon.png",
+  "commands": [
+    {
+      "name": "ffmpegsr",
+      "title": "FFmpeg Screen Recorder",
+      "subtitle": "Wrapper For FFmpeg",
+      "description": "Maybe it useful",
+      "mode": "view"
+    }
+  ],
+  "preferences": [],
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop",
+    "format": "biome format --write src",
+    "lint": "vici lint"
+  },
+  "dependencies": {
+    "@vicinae/api": "^0.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@biomejs/biome": "2.3.2"
+  }
+}
