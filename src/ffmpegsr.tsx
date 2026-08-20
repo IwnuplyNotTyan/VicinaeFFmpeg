@@ -7,7 +7,7 @@ import {
   showToast,
   Toast,
   getPreferenceValues,
-} from "@raycast/api";
+} from "@vicinae/api";
 import { execSync, spawn } from "child_process";
 import * as fs from "fs";
 import * as path from "path";
