@@ -165,7 +165,7 @@ export default function FFmpegScreenRecorder() {
       if (s.active) {
         setStartedAt(new Date());
         toast.style = Toast.Style.Success;
-        toast.title = "🔴 Recording started";
+        toast.title = "Recording started";
       } else {
         toast.style = Toast.Style.Failure;
         toast.title = "Failed to start";
@@ -193,8 +193,8 @@ export default function FFmpegScreenRecorder() {
   const display = detectDisplay();
 
   const markdown = status.active
-    ? `# 🔴 Recording\n\n\`\`\`log\n${logLines}\n\`\`\``
-    : `# ⚫ Ready to Record\n\n\`\`\`log\n${logLines}\n\`\`\``;
+    ? `# Recording\n\n\`\`\`log\n${logLines}\n\`\`\``
+    : `# Ready to Record\n\n\`\`\`log\n${logLines}\n\`\`\``;
 
   return (
     <Detail

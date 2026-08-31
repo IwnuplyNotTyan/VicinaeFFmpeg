@@ -73,13 +73,13 @@ export default async function main() {
 
   if (isRecording()) {
     stopRecording();
-    await showHUD("⏹ Recording stopped — file saved to Desktop");
+    await showHUD("Recording stopped — file saved to Desktop");
   } else {
     try {
       startRecording(prefs);
-      await showHUD("🔴 Recording started");
+      await showHUD("Recording started");
     } catch (e) {
-      await showHUD(`❌ Failed to start: ${e}`);
+      await showHUD(`Failed to start: ${e}`);
     }
   }
 }
