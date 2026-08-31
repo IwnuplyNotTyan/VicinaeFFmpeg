@@ -74,7 +74,7 @@ function startRecording(prefs: Preferences): void {
 
   const display = detectDisplay();
   const resolution = detectResolution(display);
-  const audioDevice = prefs.audioDevice?.trim() || "default";
+  const audioDevice = prefs.audioDevice?.trim() || "@DEFAULT_MONITOR@";
   const fps = prefs.fps?.trim() || "60";
 
   const args = [
